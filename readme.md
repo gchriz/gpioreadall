@@ -10,6 +10,17 @@ This simple Python script here aims to give a similar output.
 
 It has been tested with a Raspberry Pi version 2B and a Pi400 yet.
 
+The program uses *pigpio*. To make it work the daemon *pigpiod* needs to be running!
+
+Start it once with:
+
+    sudo pigpiod
+
+or for automatic start on every boot:
+
+    sudo systemctl enable --now pigpiod
+
+
 No warranties at all - as usual.
 
 Comments and suggestions are welcome.
