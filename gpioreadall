@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Simple clone of wiringPi's 'gpio readall'.
-    Since wiringPi is no longer developed (see http://wiringpi.com/news) 
+    Since wiringPi is no longer developed (see http://wiringpi.com/news)
     and is not contained in Raspberry Pi OS version Bullseye any more
     the command 'gpio' is gone.  And so the really helpfull 'gpio readall' too.
     This simple Python script here aims to give a similar output.
@@ -21,7 +21,7 @@ def get_gpio_infos():
     """ return a list of infos about the pins from given layout """
 
     layout = [
-               # BCM GPIO , Name 
+               # BCM GPIO , Name
                [None, "3.3V" ],  [None, "5V"   ],
                [   2, "SDA.1"],  [None, "5V"   ],
                [   3, "SCL.1"],  [None, "GND"  ],
