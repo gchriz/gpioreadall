@@ -8,6 +8,7 @@
     It has been tested with a Raspberry Pi version 2B and a Pi400.
     No warranties at all - as usual. """
 
+import sys
 import pigpio
 
 
@@ -45,6 +46,10 @@ def get_gpio_infos():
              ]
 
     pi = pigpio.pi()  # local pi
+
+    if not pi.connected:
+        sys.exit(1)
+
     gpio_infos = []
 
     for pins in layout:
